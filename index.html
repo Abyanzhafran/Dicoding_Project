@@ -12,30 +12,32 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul class="flex flex-sm justify-between">
-      <div class="navbar-brand">
-        <a href="#boy" class="bg-white text-none">SHOWCASE</a>
-      </div>
-      <div class="flex flex-sm">
-        <li>
-          <a href="#boy">Home</a>
-        </li>
-        <li>
-          <a href="#boy">Features</a>
-        </li>
-        <li>
-          <a href="#boy">Pricing</a>
-        </li>
-        <li>
-          <a href="#boy">About</a>
-        </li>
-        <li>
-          <a href="#boy">Contact</a>
-        </li>
-      </div>
-    </ul>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <ul class="flex flex-sm justify-between">
+        <div class="navbar-brand">
+          <a href="#boy" class="bg-white text-none">SHOWCASE</a>
+        </div>
+        <div class="flex flex-sm">
+          <li>
+            <a href="#boy">Home</a>
+          </li>
+          <li>
+            <a href="#boy">Features</a>
+          </li>
+          <li>
+            <a href="#boy">Pricing</a>
+          </li>
+          <li>
+            <a href="#boy">About</a>
+          </li>
+          <li>
+            <a href="#boy">Contact</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section class="flex">
@@ -53,7 +55,10 @@
     </section>
     <section class="flex for-card-feat font-roboto">
       <div class="flex sec-title">
-        <h1 class="no-padding-margin">Features</h1>
+        <div>
+          <h1 class="no-padding-margin">Features</h1>
+          <hr class="solid">
+        </div>
       </div>
       <div class="card">
         <div class="card-inside-feat">
@@ -99,12 +104,17 @@
     </section>
     <section class="flex for-card-price">
       <div class="flex sec-title font-roboto">
-        <h1 class="no-padding-margin">Pricing</h1>
+        <div>
+          <h1 class="no-padding-margin">Pricing</h1>
+          <hr class="solid">
+        </div>
       </div>
       <div class="card-price">
         <div class="flex card-inside-feat">
-          <h1 class="no-padding-margin font-roboto">Free</h1>
-          <hr class="solid">
+          <div>
+            <h1 class="no-padding-margin font-roboto">Free</h1>
+            <hr class="solid">
+          </div>
           <span class="price">$0</span>
           <button class="btn-price">GET STARTED</button>
         </div>
@@ -112,8 +122,10 @@
 
       <div class="card-price">
         <div class="flex card-inside-feat">
-          <h1 class="no-padding-margin font-roboto">Standard</h1>
-          <hr class="solid">
+          <div>
+            <h1 class="no-padding-margin font-roboto">Standard</h1>
+            <hr class="solid">
+          </div>
           <span class="price">$7.50</span>
           <button class="btn-price">START TRIAL</button>
         </div>
@@ -121,14 +133,69 @@
 
       <div class="card-price">
         <div class="flex card-inside-feat">
-          <h1 class="no-padding-margin font-roboto">Premium</h1>
-          <hr class="solid">
+          <div>
+            <h1 class="no-padding-margin font-roboto">Premium</h1>
+            <hr class="solid">
+          </div>
           <span class="price">$14.50</span>
           <button class="btn-price">START TRIAL</button>
         </div>
       </div>
     </section>
+    <section class="flex for-card-about">
+      <div class="flex sec-title font-roboto">
+        <div>
+          <h1 class="no-padding-margin">About</h1>
+          <hr class="solid">
+        </div>
+      </div>
+      <div class="card-about">
+        <div class="flex card-inside-about">
+          <img src="assets/gue_1.png" class="img-rounded" alt="gue" width="250" height="200">
+          <h1 class="no-padding-margin font-roboto">Backend-Developer</h1>
+        </div>
+      </div>
+
+      <div class="card-about">
+        <div class="flex card-inside-about">
+          <img src="assets/tegar_1.png" class="img-rounded" alt="gue" width="250" height="200">
+          <h1 class="no-padding-margin font-roboto">Frontend-Developer</h1>
+        </div>
+      </div>
+    </section>
+    <section class="flex for-card-contact">
+      <div class="flex sec-title">
+        <div>
+          <h1 class="no-padding-margin font-roboto">Get in Touch</h1>
+          <hr class="solid">
+        </div>
+      </div>
+      <div class="flex card-inside-form">
+        <form class="flex-form">
+          <input type="text" id="fname" name="firstname" placeholder="Your Name">
+          <input type="text" id="fname" name="firstname" placeholder="Your Email">
+          <textarea rows="4" cols="50" placeholder="Send Message..."></textarea>
+          <button class="btn-price">Submit</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="flex for-card-contact">
+    <div class="flex div-1-footer">
+      <span>About</span>
+      <span>Contact</span>
+      <span>Career</span>
+    </div>
+    <div class="flex for-footer">
+      <i class="material-icons i-footer">cloud_upload</i>
+      <i class="material-icons i-footer">cloud_upload</i>
+      <i class="material-icons i-footer">cloud_upload</i>
+    </div>
+    <div class="flex div-2-footer">
+      <span>Copyright © 2021 - All right reserved by ShowOff Ltd</span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
