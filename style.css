@@ -31,6 +31,43 @@
   align-items: center;
 }
 
+.no-padding-margin {
+  padding: 0;
+  margin : 0;
+}
+
+.card-inside {
+  padding: 50px;
+  text-align: center;
+}
+
+.for-card-wrap {
+  gap: 14px; 
+  flex-wrap: wrap;
+  margin-right: 4px;
+  margin-left: 4px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 200px;  
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: gainsboro;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.i-style {
+  font-size: 40px;
+}
+
+i {
+  color: dodgerblue;
+}
+
 ul {
   list-style-type: none;
   padding-top: 12px;
@@ -58,6 +95,11 @@ li a {
 
 article {
   margin: 20px;
+}
+
+section {
+  padding: 20px;
+  padding-top: 80px;
 }
 
 @media screen and (max-width: 640px) {
