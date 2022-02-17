@@ -1,67 +1,64 @@
-// const cardCompItem = [
-//   {
-//     title: 'page builder',
-//     caption: 'Build your page easily',
-//   },
-//   {
-//     title: 'customized domain',
-//     caption: 'Create your beautiful domain',
-//   },
-//   {
-//     title: 'simple main board',
-//     caption: 'Make your own page with very simple main board',
-//   },
-//   {
-//     title: 'handle your transaction payment',
-//     caption: 'You can handle and customize your own transaction easily',
-//   },
-//   {
-//     title: 'easy publish page',
-//     caption: 'Easy to publish',
-//   },
-//   {
-//     title: 'share and collaborate',
-//     caption: 'Share it and collaborate with your friends',
-//   },
-// ];
-
 const cardCompItem = [
   {
-    icon: <BeakerIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'science',
     title: 'page builder',
     caption: 'Build your page easily',
-    url: '/pageBuilder',
   },
   {
-    icon: <PencilAltIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'edit_note',
     title: 'customized domain',
     caption: 'Create your beautiful domain',
-    url: '/customizeDomain',
   },
   {
-    icon: <ClipboardListIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'assignment',
     title: 'simple main board',
     caption: 'Make your own page with very simple main board',
-    url: '/simpleMainBoard',
   },
   {
-    icon: <CashIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'payments',
     title: 'handle your transaction payment',
     caption: 'You can handle and customize your own transaction easily',
-    url: '/transaction',
   },
   {
-    icon: <CloudUploadIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'cloud_upload',
     title: 'easy publish page',
     caption: 'Easy to publish',
-    url: '/easyPublish',
   },
   {
-    icon: <ShareIcon className="h-14 w-14 text-blue-500" />,
+    icon: 'share',
     title: 'share and collaborate',
     caption: 'Share it and collaborate with your friends',
-    url: '/share',
   },
 ];
 
-var cards = document.getElementById('card-id')
+// var cardData = cardCompItem.map(x => x)
+// console.log(cardData)
+
+// for (let i = 0; i < cardCompItem.length; i++) {
+//   console.log(cardCompItem[i].icon)
+// }
+
+var outputHtml = "";
+// for (let i = 0; i < cardCompItem.length; i++) {
+//   // console.log(cardCompItem[i].icon)
+//   outputHtml += cardCompItem[i].icon
+// }
+
+// loop array here
+for (let i = 0; i < cardCompItem.length; i++) {
+  outputHtml += '<div class="card" >';
+  outputHtml += '<div class="card-inside-feat" >';
+  outputHtml += '<i class="material-icons i-style">' + cardCompItem[i].icon + '</i>';
+  outputHtml += '<h1 class="no-padding-margin font-roboto">' + cardCompItem[i].title + '</h1>';
+  outputHtml += '</div>';
+  outputHtml += '</div>';
+}
+
+document.getElementById('boyy').innerHTML = outputHtml
+
+// console.log(outputHtml)
+
+// var res = cardCompItem.filter(x => { return x.title === 'easy publish page' })
+// console.log(res)
+
+// var cards = document.getElementById('card-id')
