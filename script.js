@@ -38,7 +38,8 @@ for (let i = 0; i < cardCompItem.length; i++) {
   outputHtml += '<div class="card" >'
   outputHtml += '<div class="card-inside-feat" >'
   outputHtml += '<i class="material-icons i-style">' + cardCompItem[i].icon + '</i>'
-  outputHtml += '<h1 class="no-padding-margin font-roboto">' + cardCompItem[i].title + '</h1>'
+  outputHtml += '<h2 class="no-padding-margin font-roboto">' + cardCompItem[i].title + '</h2>'
+  outputHtml += '<p>' + cardCompItem[i].caption + '</p>'
   outputHtml += '</div>'
   outputHtml += '</div>'
 }
