@@ -42,7 +42,7 @@
 }
 
 .for-card-wrap {
-  gap: 14px; 
+  gap: 20px; 
   flex-wrap: wrap;
   margin-right: 4px;
   margin-left: 4px;
@@ -50,8 +50,8 @@
 }
 
 .card {
-  width: 300px;
-  height: 200px;  
+  width: 350px;
+  height: 250px;  
   border-radius: 10px;
   box-sizing: border-box;
   background-color: gainsboro;
