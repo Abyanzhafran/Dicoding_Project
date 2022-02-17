@@ -206,6 +206,10 @@
   background-color: white;
 }
 
+.burger-menu {
+  display: none;
+}
+
 i {
   color: dodgerblue;
 }
@@ -297,14 +301,27 @@ footer {
     margin-top: 10px;
   }
 
-  /* ul {
-    padding: 0;
+  .burger-menu {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* .justify-between {
+    justify-content: space-between;    
   } */
 
-  li {
+  /* li {
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center;
+  } */
+  li {
+    display: none;
   }
 }
 
