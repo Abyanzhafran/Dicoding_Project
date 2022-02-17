@@ -25,10 +25,16 @@
   display: flex;
 }
 
-.width-50 {
+.w-50 {
   width: 50%;
   justify-content: center;
   align-items: center;
+}
+
+.sec-title {
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 24px;
 }
 
 .no-padding-margin {
@@ -36,16 +42,23 @@
   margin : 0;
 }
 
-.card-inside {
+.card-inside-feat {
   padding: 50px;
   text-align: center;
+  gap: 20px;
+  flex-direction: column;
 }
 
-.for-card-wrap {
+.for-card-feat {
   gap: 20px; 
   flex-wrap: wrap;
-  margin-right: 4px;
-  margin-left: 4px;
+  justify-content: center;
+  background-color: gainsboro;
+}
+
+.for-card-price {
+  gap: 20px; 
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -53,15 +66,53 @@
   width: 350px;
   height: 250px;  
   border-radius: 10px;
-  box-sizing: border-box;
-  background-color: gainsboro;
   justify-content: center;
   align-items: center;
   display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 15px grey;
+}
+
+.card-price {
+  width: 350px;
+  height: 280px;  
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  box-shadow: 2px 2px 10px grey; 
+}
+
+.btn-price {
+  background-color: white; 
+  color: black; 
+  border: 2px solid darkslateblue;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: darkslateblue;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.btn-price:hover {
+  background-color: darkslateblue;
+  color: white;
 }
 
 .i-style {
+  font-size: 70px;
+}
+
+.price {
+  font-family: Roboto;
   font-size: 40px;
+  font-weight: 800;
+}
+
+.font-roboto {
+  font-family: Roboto;
 }
 
 i {
@@ -77,6 +128,11 @@ ul {
 h2 {
   font-family: Roboto;
   font-weight: 800;
+}
+
+hr.solid {
+  border-top: 3px solid grey;
+  width: 100%;
 }
 
 body {
@@ -98,8 +154,8 @@ article {
 }
 
 section {
-  padding: 20px;
-  padding-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;    
 }
 
 @media screen and (max-width: 640px) {
