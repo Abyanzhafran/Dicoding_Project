@@ -120,19 +120,25 @@
           <hr class="solid">
         </div>
       </div>
-      <aside class="card-about">
+      <div class="card-about">
         <div class="flex card-inside-about">
           <img src="assets/gue_1.png" class="img-rounded" alt="gue" width="250" height="200">
-          <h1 class="no-padding-margin font-roboto">Backend-Developer</h1>
+          <div class="flex about-card">
+            <h1 class="no-padding-margin font-roboto">Frontend-Developer</h1>
+            <span class="font-roboto">Muhammad Abyan Zhafran Daffa</span>
+          </div>
         </div>
-      </aside>
+      </div>
 
-      <aside class="card-about">
+      <div class="card-about">
         <div class="flex card-inside-about">
-          <img src="assets/tegar_1.png" class="img-rounded" alt="gue" width="250" height="200">
-          <h1 class="no-padding-margin font-roboto">Frontend-Developer</h1>
+          <img src="assets/gue_1.png" class="img-rounded" alt="gue" width="250" height="200">
+          <div class="flex about-card">
+            <h1 class="no-padding-margin font-roboto">Backend-Developer</h1>
+            <span class="font-roboto">Muhammad Abyan Zhafran Daffa</span>
+          </div>
         </div>
-      </aside>
+      </div>
     </section>
 
     <section class="flex for-card-contact" id="contact">
@@ -142,13 +148,42 @@
           <hr class="solid">
         </div>
       </div>
-      <div class="flex card-inside-form">
-        <form class="flex-form">
-          <input type="text" id="fname" name="firstname" placeholder="Your Name">
-          <input type="text" id="fname" name="firstname" placeholder="Your Email">
-          <textarea rows="4" cols="50" placeholder="Send Message..."></textarea>
-          <button class="btn-price">Submit</button>
-        </form>
+      <div class="flex card-contact-wrap">
+        <div class="flex card-inside-form">
+          <form class="flex-form">
+            <input type="text" id="fname" name="firstname" placeholder="Your Name">
+            <input type="text" id="fname" name="firstname" placeholder="Your Email">
+            <textarea rows="4" cols="50" placeholder="Send Message..."></textarea>
+            <button class="btn-price">Submit</button>
+          </form>
+        </div>
+        <aside class="card-bio">
+          <div class="flex card-inside-about">
+            <div class="flex gap-20">
+              <div>
+                <h1 class="no-padding-margin font-roboto">Biodata</h1>
+                <hr class="solid">
+              </div>
+              <div class="flex justify-center items-start">
+                <img src="assets/gue_1.png" class="img-rounded" alt="gue" width="90" height="90">
+              </div>
+            </div>
+            <h1 class="no-padding-margin font-roboto mb">Backend-Developer</h1>
+            <div class="flex about-card">
+              <span class="bio-title">Nama</span>
+              <span class="font-roboto">Muhammad Abyan Zhafran Daffa</span>
+              <br>
+              <span class="bio-title">Alamat</span>
+              <span>Jl. Pleret Utama II No. 10, Banyuanyar, Banjarsari, Jawa Tengah</span>
+              <br>
+              <span class="bio-title">No. Telepon</span>
+              <span>085717442397</span>
+              <br>
+              <span class="bio-title">Email</span>
+              <span>muhammad.3252@students.amikom.ac.id</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
