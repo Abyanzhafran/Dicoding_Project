@@ -246,6 +246,17 @@
   margin-left: 18px;
 }
 
+.about-card-2 {
+  flex-direction: column;
+  margin-right: 3px;
+  margin-right: 3px;
+  text-align: start;
+  justify-content: center;
+  margin-right: 18px;
+  margin-left: 18px;
+  gap: 15px;
+}
+
 .gap-20 {
   gap: 20px;
   flex-direction: column;
